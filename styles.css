@@ -1,0 +1,147 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header, .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.header-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.line {
+    border-top: 2px solid #333;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .logo {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-button {
+    display: none; /* Hidden by default, can be shown for mobile view */
+    width: 30px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+    }
+    
+    .nav-links.mobile-menu {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+.header-content h1, .header-content h2 {
+    color: #333;
+}
+
+.ctn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.events, .explore, .tours {
+    padding: 20px;
+}
+
+.events .title, .explore-content, .tours .row {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    flex: 1;
+    max-width: calc(25% - 10px);
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+}
